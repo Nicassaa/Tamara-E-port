@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Quarter 4</title>
+
+<style>
+
+/* BODY */
+body{
+    margin:0;
+    font-family: Trebuchet MS, sans-serif;
+    background-image:url("quarter4bg3.jpg");
+    background-size:cover;
+    background-position:center;
+}
+
+/* LOADING SCREEN */
+#loading{
+    position:fixed;
+    width:100%;
+    height:100vh;
+    background-image:url("bg4.jpg"); /* loading background */
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+
+    z-index:9999;
+}
+
+/* meme image */
+#loading img{
+    width:120px;
+    margin-bottom:15px;
+}
+
+/* loading text */
+#loading h1{
+    color:white;
+}
+
+/* PAGE CONTENT */
+#content{
+    display:none;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+/* wrapper to keep button under boxes */
+.wrapper{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:20px;
+}
+
+/* boxes container */
+.container{
+    display:flex;
+    gap:30px;
+}
+
+/* topic boxes */
+.box{
+    width:180px;
+    height:180px;
+    border-radius:20px;
+    background: rgba(255,255,255,0.7);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-decoration:none;
+    transition:0.3s;
+    box-shadow:0 5px 15px rgba(0,0,0,0.3);
+    font-weight:bold;
+    font-size:20px;
+    color:#333;
+}
+
+.box:hover{
+    transform:scale(1.1) rotate(-2deg);
+}
+
+/* back button */
+.back{
+    background-color:#C4A484;
+    color:white;
+    padding:10px 25px;
+    text-decoration:none;
+    border-radius:8px;
+}
+
+</style>
+
+<script>
+
+/* loading delay */
+window.onload = function(){
+
+setTimeout(function(){
+
+document.getElementById("loading").style.display="none";
+document.getElementById("content").style.display="flex";
+
+},2000);
+
+}
+
+</script>
+
+</head>
+
+<body>
+
+<!-- LOADING SCREEN -->
+<div id="loading">
+
+<img src="gurlcat1.jpg"> <!-- your meme image -->
+
+<h1>Loading...</h1>
+
+</div>
+
+
+<!-- MAIN CONTENT -->
+<div id="content">
+
+<div class="wrapper">
+
+<div class="container">
+
+<a href="ict4.html" class="box">
+<span>💻<br>ICT</span>
+</a>
+
+<a href="ap4.html" class="box">
+<span>📚<br>AP</span>
+</a>
+
+<a href="events4.html" class="box">
+<span>🎁<br>?</span>
+</a>
+
+</div>
+
+<a href="MAINPAGE.html" class="back">Back</a>
+
+</div>
+
+</div>
+
+</body>
+</html>
