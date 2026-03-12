@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>My CSS Outputs</title>
+
+<style>
+
+body{
+    margin:0;
+    font-family: Arial, sans-serif;
+    background-image: url("quarter3bg2.jpg"); /* your background */
+    background-size: 100%;
+    background-position: center;
+}
+
+/* container to center everything */
+.container{
+    width:80%;
+    margin:auto;
+    padding-top:40px;
+}
+
+/* horizontal squares */
+.square{
+    display:flex;
+    margin-bottom:30px;
+    background-color: rgba(255,255,255,0.9);
+    border:2px solid black;
+}
+
+/* compartments */
+.compartment{
+    width:50%;
+    padding:20px;
+    text-align:center;
+    border-right:2px solid black;
+}
+
+.compartment:last-child{
+    border-right:none;
+}
+
+/* images */
+img{
+    width:90%;
+    height:auto;
+}
+
+/* back button style */
+.back-btn{
+    display:inline-block;
+    margin:20px;
+    padding:10px 20px;
+    background-color:#4CAF50;
+    color:white;
+    text-decoration:none;
+    border-radius:5px;
+    font-weight:bold;
+}
+
+.back-btn:hover{
+    background-color:#45a049;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- Back button -->
+<a href="quarter3.html" class="back-btn">← Back to 3rd Quarter</a>
+
+<h1> 3 CODES AND OUTPUTS </h1>
+
+<div class="container">
+
+<!-- Square 1 -->
+<div class="square">
+
+<div class="compartment">
+<h3>Code</h3>
+<img src="wb1.jpg">
+</div>
+
+<div class="compartment">
+<h3>Output</h3>
+<img src="wb1.1.jpg">
+</div>
+
+</div>
+
+
+<!-- Square 2 -->
+<div class="square">
+
+<div class="compartment">
+<h3>Code</h3>
+<img src="wb2.jpg">
+</div>
+
+<div class="compartment">
+<h3>Output</h3>
+<img src="wb2.2.jpg">
+</div>
+
+</div>
+
+
+<!-- Square 3 -->
+<div class="square">
+
+<div class="compartment">
+<h3>Code</h3>
+<img src="wb3.jpg">
+</div>
+
+<div class="compartment">
+<h3>Output</h3>
+<img src="wb3.3.jpg">
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>
