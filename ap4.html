@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Quarter 4 - AP</title>
+<style>
+
+/* page background */
+body{
+    margin:0;
+    font-family: Trebuchet MS, sans-serif;
+    background-image: url("ap4bg2.jpg"); /* replace with your AP background */
+    background-size: cover;
+    background-position: center;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+/* container for grid */
+.container{
+    display:grid;
+    grid-template-columns: repeat(3, 180px); /* 3 boxes per row */
+    grid-template-rows: repeat(2, 180px);   /* 2 rows for 6 boxes */
+    gap:25px;
+}
+
+/* cutesy boxes */
+.box{
+    border-radius:20px;
+    background: rgba(255,255,255,0.7);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-decoration:none;
+    position:relative;
+    transition:0.3s;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    font-weight:bold;
+    font-size:18px;
+    color:#333;
+    flex-direction: column;
+}
+
+/* hover effect */
+.box:hover{
+    transform: scale(1.1) rotate(-2deg);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+    background: rgba(255,255,255,0.85);
+}
+
+/* icons/text inside box */
+.box span{
+    display:block;
+    text-align:center;
+}
+
+</style>
+</head>
+<body>
+
+<div class="container">
+
+<a href="topic1.1.html" class="box">
+    <span>📖<br>Topic 1</span>
+</a>
+
+<a href="topic1.2.html" class="box">
+    <span>📖<br>Topic 2</span>
+</a>
+
+<a href="topic1.3.html" class="box">
+    <span>📖<br>Topic 3</span>
+</a>
+
+<a href="topic1.4.html" class="box">
+    <span>📖<br>Topic 4</span>
+</a>
+
+<a href="topic1.5.html" class="box">
+    <span>📖<br>Topic 5</span>
+</a>
+
+<a href="topic1.6.html" class="box">
+    <span>📖<br>Topic 6</span>
+</a>
+
+<div style="text-align:center; margin-top:20px;">
+  <a href="quarter4.html" style="
+    background-color:#C4A484;
+    color:white;
+    padding:10px 25px;
+    text-decoration:none;
+    border-radius:8px;
+    display:inline-block;
+  ">Back</a>
+</div>
+
+
+</div>
+
+
+</body>
+</html>
