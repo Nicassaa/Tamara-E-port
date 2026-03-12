@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Web Development Lessons</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: url('background.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #fff;
+        }
+
+        .overlay {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            min-height: 100vh;
+        }
+
+        .lesson-box {
+            background: rgba(255, 255, 255, 0.1);
+            border: 2px solid #fff;
+            border-radius: 10px;
+            margin: 15px 0;
+            padding: 15px;
+        }
+
+        h2 {
+            color: #FFD700;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        table, th, td {
+            border: 1px solid #fff;
+        }
+
+        th, td {
+            padding: 5px;
+            text-align: left;
+        }
+
+        th {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        button {
+            margin-top: 10px;
+            padding: 5px 10px;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            background-color: #FFD700;
+            color: #000;
+        }
+
+        .back-btn {
+            display: inline-block;
+            margin-top: 20px;
+        }
+    </style>
+    <script>
+        function toggleLesson(id) {
+            const content = document.getElementById(id);
+            content.style.display = content.style.display === "none" ? "block" : "none";
+        }
+
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+</head>
+<body>
+    <div class="overlay">
+        <h1>Web Development Lessons</h1>
+
+        <!-- Lesson 1 -->
+        <div class="lesson-box">
+            <h2>Lesson 1 - XHTML</h2>
+            <button onclick="toggleLesson('lesson1')">Show/Hide Details</button>
+            <div id="lesson1" style="display:none;">
+                <p>eXtensible HyperText Markup Language (XHTML)</p>
+                <p>The “x” comes from XML or eXtensible Mark-up Language.</p>
+                <p>Though different from HTML, XHTML also uses the filename extension .html.</p>
+                <p>It is a stricter and cleaner version of HTML, aimed to replace HTML. All new browsers support XHTML.</p>
+
+                <h3>Examples:</h3>
+                <p><strong>Proper Nesting:</strong></p>
+                <pre>&lt;b&gt;&lt;i&gt;This text will appear in boldface and in italics&lt;/i&gt;&lt;/b&gt;</pre>
+
+                <p><strong>Proper Tag Closing:</strong></p>
+                <pre>&lt;p&gt;XHTML requires proper closing of tags.&lt;/p&gt;</pre>
+
+                <p><strong>Elements in Lowercase Characters:</strong></p>
+                <pre>&lt;p&gt;Elements should be written in lowercase.&lt;/p&gt;</pre>
+
+                <p><strong>One Root Element:</strong></p>
+                <pre>
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;One Root&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;!-- body part goes here --&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+                </pre>
+
+                <p><strong>Attributes in Lowercase Characters:</strong></p>
+                <pre>&lt;img src="violetFlower.jpg" /&gt;</pre>
+
+                <p><strong>Quoted Values:</strong></p>
+                <pre>&lt;hr width="200" /&gt;</pre>
+
+                <p><strong>Forbidden Attribute Minimization:</strong></p>
+                <pre>&lt;hr noshade="noshade" /&gt;</pre>
+
+                <p><strong>Image Alternate Texts:</strong></p>
+                <pre>&lt;img src="blackcat.jpg" alt="a picture of a black cat" /&gt;</pre>
+
+                <p><strong>Ampersands in URLs:</strong></p>
+                <pre>&lt;a href="dataLibrary.php?page=12&amp;style=green"&gt;link&lt;/a&gt;</pre>
+
+                <p><strong>Contents within Block-Level Elements:</strong></p>
+                <pre>&lt;body&gt;&lt;div&gt;Put a chunk of text here.&lt;/div&gt;&lt;/body&gt;</pre>
+            </div>
+        </div>
+
+        <!-- Lesson 2 -->
+        <div class="lesson-box">
+            <h2>Lesson 2 - HTML Lists</h2>
+            <button onclick="toggleLesson('lesson2')">Show/Hide Details</button>
+            <div id="lesson2" style="display:none;">
+                <p>Used to specify lists of information. Three types of HTML lists:</p>
+                <ul>
+                    <li>Ordered List (ol)</li>
+                    <li>Unordered List (ul)</li>
+                    <li>Description List (dl)</li>
+                </ul>
+                <h3>HTML Tags:</h3>
+                <table>
+                    <tr><th>Tag</th><th>Definition</th></tr>
+                    <tr><td>&lt;ul&gt;</td><td>Unordered/bulleted list</td></tr>
+                    <tr><td>&lt;ol&gt;</td><td>Ordered/numbered list</td></tr>
+                    <tr><td>&lt;dl&gt;</td><td>Description/Definition list</td></tr>
+                    <tr><td>&lt;li&gt;</td><td>Line item</td></tr>
+                </table>
+
+                <h3>Ordered List Attributes:</h3>
+                <table>
+                    <tr><th>Attribute</th><th>Definition</th><th>Values</th></tr>
+                    <tr><td>type</td><td>Type of numbering</td><td>1, a, A, i, I</td></tr>
+                    <tr><td>start</td><td>Number of first item</td><td>Any number</td></tr>
+                </table>
+
+                <h3>Unordered List:</h3>
+                <p>Bullets: disc (round), circle (circular), square (square)</p>
+
+                <h3>Definition List:</h3>
+                <p>Uses &lt;dt&gt; for term and &lt;dd&gt; for definition.</p>
+
+                <h3>Nested List:</h3>
+                <p>You can nest lists inside &lt;li&gt; tags to create hierarchy.</p>
+            </div>
+        </div>
+
+        <!-- Lesson 3 -->
+        <div class="lesson-box">
+            <h2>Lesson 3 - HTML Tables</h2>
+            <button onclick="toggleLesson('lesson3')">Show/Hide Details</button>
+            <div id="lesson3" style="display:none;">
+                <p>Tables organize data into rows and columns. Made up of &lt;table&gt;, &lt;tr&gt;, &lt;td&gt;.</p>
+
+                <h3>Table Attributes:</h3>
+                <table>
+                    <tr><th>Attribute</th><th>Definition</th><th>Example/Value</th></tr>
+                    <tr><td>align</td><td>Horizontal alignment</td><td>&lt;table align="center"&gt;</td></tr>
+                    <tr><td>background</td><td>Background image</td><td>&lt;table background="smiley.jpg"&gt;</td></tr>
+                    <tr><td>bgcolor</td><td>Background color</td><td>&lt;table bgcolor="violet"&gt;</td></tr>
+                    <tr><td>border</td><td>Border thickness</td><td>&lt;table border="2"&gt;</td></tr>
+                    <tr><td>bordercolor</td><td>Border color</td><td>&lt;table bordercolor="yellow"&gt;</td></tr>
+                    <tr><td>cellpadding</td><td>Distance inside cells</td><td>&lt;table cellpadding="2"&gt;</td></tr>
+                    <tr><td>cellspacing</td><td>Distance between cells</td><td>&lt;table cellspacing="2"&gt;</td></tr>
+                    <tr><td>width</td><td>Table width</td><td>&lt;table width="800"&gt;</td></tr>
+                </table>
+
+                <h3>Row Attributes:</h3>
+                <table>
+                    <tr><th>Attribute</th><th>Definition</th></tr>
+                    <tr><td>align</td><td>Horizontal alignment of row content</td></tr>
+                    <tr><td>valign</td><td>Vertical alignment</td></tr>
+                    <tr><td>bgcolor</td><td>Background color</td></tr>
+                    <tr><td>height</td><td>Row height</td></tr>
+                </table>
+
+                <h3>Cell Attributes:</h3>
+                <table>
+                    <tr><th>Attribute</th><th>Definition</th></tr>
+                    <tr><td>align</td><td>Horizontal alignment</td></tr>
+                    <tr><td>valign</td><td>Vertical alignment</td></tr>
+                    <tr><td>background</td><td>Background image</td></tr>
+                    <tr><td>bgcolor</td><td>Background color</td></tr>
+                    <tr><td>height</td><td>Height of cell</td></tr>
+                    <tr><td>width</td><td>Width of cell</td></tr>
+                    <tr><td>nowrap</td><td>Prevents word wrapping</td></tr>
+                    <tr><td>colspan</td><td>Merges multiple cells horizontally</td></tr>
+                    <tr><td>rowspan</td><td>Merges multiple cells vertically</td></tr>
+                </table>
+            </div>
+        </div>
+
+        <!-- Lessons 4–9 similarly structured... -->
+
+        <!-- Back button -->
+        <button class="back-btn" onclick="goBack()">Back to Main Page</button>
+    </div>
+</body>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Quarter 3</title>
+<style>
+
+
+body{
+    margin:0;
+    font-family: Trebuchet MS, sans-serif;
+}
+
+/* Loading screen */
+#loading{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-image: url("bg1.jpg"); 
+    background-size: cover;
+    background-position: center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    z-index:10;
+    flex-direction:column;
+}
+
+
+/* meme inside loading screen */
+#loading img{
+    width:200px;
+    border-radius:15px;
+    animation: shake 1s infinite;
+}
+
+#loading p{
+    color:white;
+    font-size:20px;
+    margin-top:20px;
+}
+
+/* main container hidden initially */
+#mainContent{
+    display:none;
+    height:100vh;
+    background-image: url("quarter3bg1.jpg");
+    background-size: cover;
+    background-position: center;
+    display:flex;
+    flex-direction: column; 
+    justify-content:center;
+    align-items:center;
+}
+
+/* container for 2 boxes */
+.container{
+    display:flex;
+    gap:30px;
+}
+
+/* cutesyyyyyyy boxes */
+.box{
+    width:180px;
+    height:180px;
+    border-radius:20px;
+    background: rgba(255,255,255,0.7);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-decoration:none;
+    position:relative;
+    transition:0.3s;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    font-weight:bold;
+    font-size:20px;
+    color:#333;
+    flex-direction: column;
+}
+
+
+.box:hover{
+    transform: scale(1.1) rotate(-2deg);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+    background: rgba(255,255,255,0.85);
+}
+
+/* icons inside box */
+.box span{
+    display:block;
+    text-align:center;
+}
+
+/* shake animation for meme */
+@keyframes shake{
+    0% {transform: translate(0,0);}
+    25% {transform: translate(5px,0);}
+    50% {transform: translate(-5px,0);}
+    75% {transform: translate(5px,0);}
+    100% {transform: translate(0,0);}
+}
+
+/* back button hover */
+.back-btn:hover{
+    background-color:#45a049;
+}
+
+</style>
+
+<script>
+// simulate loading for 2 seconds then show main content
+window.addEventListener("load", function(){
+    setTimeout(function(){
+        document.getElementById("loading").style.display = "none";
+        document.getElementById("mainContent").style.display = "flex";
+    }, 2000); // 2 seconds loading
+});
+</script>
+
+</head>
+<body>
+
+  <!-- Loading screen -->
+<div id="loading">
+    <img src="bg2.jpg" alt="Loading..">
+    <p>Loading Quarter 3...</p>
+</div>
+   
+
+<!-- Main content -->
+<div id="mainContent">
+    <div class="container">
+
+        <a href="computer.html" class="box">
+            <span>💻<br>Computer</span>
+        </a>
+
+        <a href="events3.html" class="box">
+            <span>🎁<br>Gift</span>
+        </a>
+
+    </div>
+
+    <!-- Back button container (centered under boxes) -->
+    <div style="width:100%; display:flex; justify-content:center; margin-top:30px;">
+        <a href="MAINPAGE.html" class="back-btn" 
+           style="padding:12px 25px; background-color:#ff99cc; color:white; text-decoration:none; border-radius:15px; font-weight:bold; font-size:18px;">
+           ← Back to W̵̷̴̢̡͈̖̻̲̼͉̜̗̭͚̘̼̝̦̥̣̺͕͓͙̑̇ͥ̊̏̌ͦͫ̉̓̀ͨ͆̀̓͋̀̎́͡Ḩ̴̴̧̦̩̩̲͖̥̯̣̥̘͓͔͌͆ͮ̉̀͒͛̑̒͘̚̚͟͡͝ͅI̸̫̲̻͎͓͉̬̜̪̓ͭ́̀̇ͬ̀ͩͪͧ̈́͟C̸̨̰̣͓̭͖̝͉̜͚̆̓̽ͪͥ͌ͩ͛͐͋̐̏̎̕͜͡_̼̩͈̪̜ͤ̀ͩ̅ͭͦH͉͈̆̔͌̔̇ O̧̨̼̙͢Ñ̷͕̭͚̰͒̌̓̓̑ͤȨ̸̧͔̯̞̟̻̝͕̝̠̖̝̙͈ͯ̿ͭ̐ͮ̒ͪͧ̀ͦ͗́̃͑͋ͨ͑̏̎̚̕͟͝͝ͅ?̵̴͔̬̟̟͍̪̦̝̺͍̦̬̓̄̄ͤ͊̐͑͘
+        </a>
+    </div>
+</div>
+
+</body>
+</html>
