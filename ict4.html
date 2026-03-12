@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Lessons</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('background.jpg'); /* Replace with your background image */
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+        }
+
+        .overlay {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            min-height: 100vh;
+        }
+
+        .lesson-box {
+            background: rgba(255, 255, 255, 0.1);
+            border: 2px solid #fff;
+            border-radius: 10px;
+            margin: 15px 0;
+            padding: 15px;
+        }
+
+        h2 {
+            color: #FFD700;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        table, th, td {
+            border: 1px solid #fff;
+        }
+
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        button {
+            margin-top: 10px;
+            padding: 5px 10px;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            background-color: #FFD700;
+            color: #000;
+        }
+
+        .back-btn {
+            display: inline-block;
+            margin-top: 20px;
+        }
+    </style>
+    <script>
+        function toggleLesson(id) {
+            var content = document.getElementById(id);
+            if (content.style.display === "none") {
+                content.style.display = "block";
+            } else {
+                content.style.display = "none";
+            }
+        }
+
+        function goBack() {
+            window.history.back(); // takes user back to previous page
+        }
+    </script>
+</head>
+<body>
+    <div class="overlay">
+        <h1>JavaScript Lessons</h1>
+
+        <!-- Lesson 1 -->
+        <div class="lesson-box">
+            <h2>Lesson 1 - JavaScript Events</h2>
+            <button onclick="toggleLesson('lesson1')">Show/Hide Details</button>
+            <div id="lesson1" style="display:none;">
+                <p><strong>Events:</strong> Actions triggered by mouse clicks, keyboard strokes, function calls, etc.</p>
+                <p><strong>Functions:</strong> Blocks of code that only run when called.</p>
+                <p><strong>Event Handlers:</strong> Respond to events on your page.</p>
+                <table>
+                    <tr><th>Attribute</th><th>Trigger</th></tr>
+                    <tr><td>onabort</td><td>Loading interrupted</td></tr>
+                    <tr><td>onblur</td><td>Element loses focus</td></tr>
+                    <tr><td>onchange</td><td>User changes field content</td></tr>
+                    <tr><td>onclick</td><td>Mouse click</td></tr>
+                    <tr><td>ondblclick</td><td>Double mouse click</td></tr>
+                    <tr><td>onerror</td><td>Error loading document/image</td></tr>
+                    <tr><td>onfocus</td><td>Element gets focus</td></tr>
+                    <tr><td>onkeydown</td><td>Keyboard key pressed</td></tr>
+                    <tr><td>onkeypress</td><td>Keyboard key held down</td></tr>
+                    <tr><td>onkeyup</td><td>Keyboard key released</td></tr>
+                    <tr><td>onmousedown</td><td>Mouse button pressed</td></tr>
+                    <tr><td>onmouseout</td><td>Mouse moved off element</td></tr>
+                    <tr><td>onmouseover</td><td>Mouse moved over element</td></tr>
+                    <tr><td>onmouseup</td><td>Mouse button released</td></tr>
+                    <tr><td>onreset</td><td>Reset button clicked</td></tr>
+                    <tr><td>onresize</td><td>Window/frame resized</td></tr>
+                    <tr><td>onselect</td><td>Text selected</td></tr>
+                    <tr><td>onsubmit</td><td>Submit button clicked</td></tr>
+                    <tr><td>onunload</td><td>User exits page</td></tr>
+                </table>
+                <p><strong>Popup Boxes:</strong> alert(), prompt(), confirm() for user interaction.</p>
+            </div>
+        </div>
+
+        <!-- Lesson 2 -->
+        <div class="lesson-box">
+            <h2>Lesson 2 - Conditions, Controls, and Loops #1</h2>
+            <button onclick="toggleLesson('lesson2')">Show/Hide Details</button>
+            <div id="lesson2" style="display:none;">
+                <p><strong>If Statement:</strong> Executes code if condition is true.</p>
+                <p><strong>Nested If:</strong> If inside another if statement.</p>
+                <p><strong>If-Else:</strong> Alternative code when condition is false.</p>
+                <p><strong>If Else If:</strong> Multiple conditions checked sequentially.</p>
+            </div>
+        </div>
+
+        <!-- Lesson 3 -->
+        <div class="lesson-box">
+            <h2>Lesson 3 - Conditions, Controls, and Loops #2</h2>
+            <button onclick="toggleLesson('lesson3')">Show/Hide Details</button>
+            <div id="lesson3" style="display:none;">
+                <p><strong>Switch Statement:</strong> Multiple conditions with different outcomes.</p>
+                <p><strong>Functions:</strong> Blocks of reusable code.</p>
+                <p><strong>Arguments/Parameters:</strong> Pass values to functions.</p>
+            </div>
+        </div>
+
+        <!-- Lesson 4 -->
+        <div class="lesson-box">
+            <h2>Lesson 4 - Conditions, Controls, and Loops #3</h2>
+            <button onclick="toggleLesson('lesson4')">Show/Hide Details</button>
+            <div id="lesson4" style="display:none;">
+                <p><strong>Loops:</strong> Repetitive code until a condition is met.</p>
+                <ul>
+                    <li>For Loop - known number of iterations</li>
+                    <li>While Loop - loops until condition false</li>
+                    <li>Do-While Loop - executes at least once</li>
+                    <li>For-In Loop - loops over array elements</li>
+                </ul>
+                <p><strong>Break & Continue:</strong> Control loop execution.</p>
+            </div>
+        </div>
+
+        <!-- Lesson 5 -->
+        <div class="lesson-box">
+            <h2>Lesson 5 - User Input and Dynamic Content</h2>
+            <button onclick="toggleLesson('lesson5')">Show/Hide Details</button>
+            <div id="lesson5" style="display:none;">
+                <p><strong>String & Array Objects:</strong> Properties & methods to manipulate text and lists.</p>
+                <ul>
+                    <li>String: length, charAt, indexOf, split, concat</li>
+                    <li>Array: push, pop, shift, unshift, slice, splice, join</li>
+                </ul>
+                <p><strong>Date & Time:</strong> Use Date object to get current date/time.</p>
+            </div>
+        </div>
+
+        <!-- Lesson 6 -->
+        <div class="lesson-box">
+            <h2>Lesson 6 - Math & Timing</h2>
+            <button onclick="toggleLesson('lesson6')">Show/Hide Details</button>
+            <div id="lesson6" style="display:none;">
+                <p><strong>Math Object:</strong> Constants like PI, E; Methods like sqrt(), pow(), random(), round(), etc.</p>
+                <p><strong>Timing:</strong> setTimeout() to delay actions; clearTimeout() to cancel.</p>
+            </div>
+        </div>
+
+        <!-- Back button -->
+        <button class="back-btn" onclick="goBack()">Back to Quarter 4</button>
+    </div>
+</body>
+</html>

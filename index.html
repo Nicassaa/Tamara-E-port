@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Guess who?</title>
+
+<style>
+
+body{
+    margin:0;
+    font-family: "Trebuchet MS", sans-serif;
+    background-image: url("frontpagebg2.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+/* soft overlay to blend text with background */
+.overlay{
+    background: rgba(0,0,0,0.35);
+    backdrop-filter: blur(2px);
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+/* container */
+.container{
+    text-align:center;
+    color:#fff6e9;
+    animation: float 3s ease-in-out infinite;
+}
+
+/* main title */
+h1{
+    font-size:65px;
+    margin:10px;
+    text-shadow: 0px 4px 15px rgba(0,0,0,0.6);
+}
+
+/* name */
+h2{
+    font-size:28px;
+    margin-bottom:35px;
+    opacity:0.9;
+}
+
+/* button link */
+.button{
+    display:inline-block;
+    padding:14px 35px;
+    font-size:18px;
+    border-radius:40px;
+    background: linear-gradient(45deg,#ff7eb9,#ff65a3);
+    color:white;
+    text-decoration:none;
+    transition:0.3s;
+    box-shadow:0 6px 15px rgba(0,0,0,0.3);
+}
+
+/* hover animation */
+.button:hover{
+    transform: scale(1.12);
+    box-shadow:0 8px 20px rgba(255,105,180,0.6);
+}
+
+/* floating animation */
+@keyframes float{
+    0%{transform:translateY(0px);}
+    50%{transform:translateY(-10px);}
+    100%{transform:translateY(0px);}
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="overlay">
+
+<div class="container">
+
+<h1>Welcome to my Webpage</h1>
+<h2>Tamara Nikka Barlis</h2>
+
+<a href="MAINPAGE.html" class="button">Enter Website</a>
+
+</div>
+
+</div>
+
+</body>
+</html>
+
+
+
