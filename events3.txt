@@ -188,9 +188,7 @@ h1{
 <video controls>
 <source src="vpopvid1.mp4" type="video/mp4">
 </video>
-<video controls>
-<source src="vpopvid3.mp4" type="video/mp4">
-</video>
+
 
 <div class="gallery">
 <img src="vpop1.jpg" onclick="openImg(this.src)">
@@ -231,4 +229,5 @@ document.getElementById("viewer").style.display="none";
 
 
 </body>
+
 </html>
