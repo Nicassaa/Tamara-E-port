@@ -204,9 +204,7 @@ h1{
 <video controls>
 <source src="nolivid2.mp4" type="video/mp4">
 </video>
-<video controls>
-<source src="nolivid3.mp4" type="video/mp4">
-</video>
+
 
 <div class="back">
 <a href="https://youtu.be/BZzZuFfydwI?si=NKpA8CxgzfVyi11p">⬅ Watch our Play!</a>
@@ -245,6 +243,7 @@ document.getElementById("viewer").style.display="none";
 
 </body>
 </html>
+
 
 
 
